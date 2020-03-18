@@ -18,9 +18,9 @@ public class Main3Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main3);
 
-        final Intent intent = getIntent();
-        String name = intent.getExtras().getString("userId");
-        String phone = intent.getExtras().getString("userPhone");
+
+        String name = getIntent().getStringExtra("userId");
+        String phone = getIntent().getStringExtra("userPhone");
         binding.infoIdTxt.setText(name);
         binding.infoPhoneTxt.setText(phone);
 
