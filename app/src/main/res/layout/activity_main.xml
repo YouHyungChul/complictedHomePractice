@@ -12,12 +12,14 @@
         tools:context=".MainActivity">
 
         <EditText
+            android:id="@+id/loginInputId"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
             android:singleLine="true"
             android:hint="ID"/>
         <EditText
+            android:id="@+id/loginInputPw"
             android:inputType="textPassword"
             android:singleLine="true"
             android:layout_width="match_parent"
@@ -25,14 +27,16 @@
             android:hint="PW"/>
 
         <Button
+            android:id="@+id/loginLoginBtn"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="로그인"/>
         <Button
+            android:id="@+id/loingSignupBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="로그인"/>
+            android:text="회원가입"/>
 
 
 
