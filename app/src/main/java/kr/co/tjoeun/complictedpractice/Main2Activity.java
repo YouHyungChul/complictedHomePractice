@@ -1,11 +1,14 @@
 package kr.co.tjoeun.complictedpractice;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import javax.xml.transform.Result;
 
 import kr.co.tjoeun.complictedpractice.databinding.ActivityMain2Binding;
 
@@ -28,5 +31,8 @@ public class Main2Activity extends AppCompatActivity {
                startActivity(intent);
            }
        });
+
     }
-}
+
+
+    }

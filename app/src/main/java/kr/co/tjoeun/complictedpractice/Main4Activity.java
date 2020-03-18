@@ -20,14 +20,10 @@ public class Main4Activity extends AppCompatActivity {
         binding.modiInputBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Main4Activity.this, Main3Activity.class);
-                String modiId = binding.modiNameEdi.getText().toString();
-                String modiPhone = binding.modiNameEdi.getText().toString();
-                intent.putExtra("modiName", modiId);
-                intent.putExtra("modiPhone", modiPhone);
-                startActivity(intent);
-
-
+                Intent intent = new Intent();
+                intent.putExtra("inputName", binding.modiNameEdi.getText().toString()   );
+                intent.putExtra("inputPhone", binding.modiPhoneEdi.getText().toString()   );
+                setResult(RESULT_OK, intent);
                 finish();
 
             }

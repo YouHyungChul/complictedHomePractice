@@ -1,5 +1,6 @@
 package kr.co.tjoeun.complictedpractice;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -11,6 +12,7 @@ import kr.co.tjoeun.complictedpractice.databinding.ActivityMain3Binding;
 
 public class Main3Activity extends AppCompatActivity {
     ActivityMain3Binding binding = null;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +32,20 @@ public class Main3Activity extends AppCompatActivity {
             }
         });
 
+
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1000) {
+            if (resultCode == RESULT_OK) {
+                String name = data.getStringExtra("inputName");
+                String phone = data.getStringExtra("inputPhone");
+                binding.infoIdTxt.setText(name);
+                binding.infoPhoneTxt.setText(phone);
+            }
+        }
 
     }
 }
