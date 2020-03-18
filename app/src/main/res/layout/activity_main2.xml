@@ -12,29 +12,39 @@
         tools:context=".Main2Activity">
 
         <EditText
+            android:id="@+id/signupIdEdi"
             android:layout_marginTop="30dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
             android:hint="ID"/>
         <EditText
+            android:id="@+id/signupPwEdi"
             android:layout_marginTop="15dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:singleLine="true"
             android:hint="PW"/>
         <EditText
+            android:id="@+id/signupNameEdi"
             android:layout_marginTop="15dp"
-
+            android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="이름"/>
         <EditText
+            android:id="@+id/signupPhoneEdi"
             android:layout_marginTop="15dp"
-
+            android:inputType="phone"
+            android:singleLine="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="폰번"/>
 
         <Button
+            android:id="@+id/signupSignupBtn"
             android:layout_marginTop="150dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

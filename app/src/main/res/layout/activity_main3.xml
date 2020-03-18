@@ -24,12 +24,14 @@
             android:layout_height="wrap_content">
 
             <TextView
+                android:id="@+id/infoIdTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="ID"
+                android:hint="이름"
                 android:layout_marginBottom="20dp"
                 android:singleLine="true"/>
             <TextView
+                android:id="@+id/infoPhoneTxt"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="폰번"
@@ -38,6 +40,7 @@
         </LinearLayout>
 
         <Button
+            android:id="@+id/infoModiBtn"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
